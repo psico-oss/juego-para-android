@@ -1,0 +1,64 @@
+/*.contenedor {
+  margin: 30px;
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  background-image: url("/imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+}*/
+body {
+  background-color: skyblue;
+}
+#fondi {
+  background-image: url("/imagenes/inicio.png");
+}
+#gameOver {
+  background-image: url("/imagenes/gameOver.jpg");
+}
+#margin {
+  margin: 10px;
+}
+.bag-color-black {
+  background-color: #212529;
+  padding: 1rem 0;
+}
+
+.mtop-50 {
+  margin-top: 50px;
+}
+
+.mtop-20 {
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+.img-personaje {
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+}
+#boton {
+  color: white;
+}
+
+#puntos {
+  color: white;
+}
+#frame {
+  border: 1px solid black;
+}
+#mainE {
+  background-image: url("/imagenes/fondo.png");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+#barquito {
+  background-image: url("/imagenes/barco2.webp");
+  background-repeat: no-repeat;
+}
+#misiles {
+  background-image: url("/imagenes/misil.png");
+  background-repeat: no-repeat;
+}

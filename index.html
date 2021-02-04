@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Juego beta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="fondo">
+      <div id="fondi">
+        <div id="menu" class="container mtop-50">
+          <div class="justify-content-center">
+            <h1>Ship Wars</h1>
+          </div>
+
+          <div class=" justify-content-center">
+            <button id="startMenu" type="button" class="nes-btn is-success">
+              Start game
+            </button>
+            <button id="optionsMenu" type="button" class="nes-btn is-warning">
+              Options
+            </button>
+          </div>
+        </div>
+        <div id="options" class="container mtop-50 hide">
+          <div class="d-flex justify-content-center">
+            <h1>Opciones</h1>
+          </div>
+
+          <div class="justify-content-center">
+            <h2>Sonido</h2>
+            <label>
+              <input
+                id="opcSi"
+                type="radio"
+                class="nes-radio"
+                name="answer"
+                checked
+              />
+              <span>Yes</span>
+            </label>
+
+            <label>
+              <input id="opcNo" type="radio" class="nes-radio" name="answer" />
+              <span>No</span>
+            </label>
+
+            <div class="d-flex justify-content-center">
+              <a id="optionsVolver" class="nes-btn" href="#">Volver</a>
+            </div>
+          </div>
+        </div>
+        <div id="main" class="container mtop-50 hide">
+          <div class="d-flex justify-content-center"></div>
+          <div class="d-flex justify-content-center">
+            <h2>Selecciona Personajes</h2>
+          </div>
+          <div
+            id="startPersonajes"
+            class="mtop-20 d-flex justify-content-center"
+          ></div>
+
+          <div id="startPersonajesInfo" class="mtop-20 container"></div>
+          <div id="margin">
+            <button id="mainIniciar" type="button" class="nes-btn is-primary">
+              Iniciar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="frame" class="hide">
+        <div id="mainE">
+          <div id="barquito"></div>
+        </div>
+      </div>
+
+      <div id="gameOver" class="hide">
+        <div id="boton">
+          <h2>¿Desea Continuar?</h2>
+          <label>
+            <input
+              id="si"
+              type="radio"
+              class="nes-radio"
+              name="answer"
+              checked
+            />
+            <span>Yes</span>
+          </label>
+
+          <label>
+            <input id="no" type="radio" class="nes-radio" name="answer" />
+            <span>No</span>
+          </label>
+        </div>
+
+        <h2 id="puntos">Score:</h2>
+        <div id="score"></div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./java/main.js"></script>
+  </body>
+</html>
